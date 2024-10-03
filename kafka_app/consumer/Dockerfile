@@ -10,7 +10,7 @@ ENV PYTHONUNBUFFERED 1
 
 # install system dependencies
 RUN apt-get update \
-    && apt-get -y install kafkacat\
+    && apt-get -y install kafkacat gcc python3-dev build-essential \
     && apt-get clean \
     && rm -rf /var/lib/apt/lists/*
 
